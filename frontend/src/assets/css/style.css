@@ -1,0 +1,4062 @@
+/************ Normal Css ************/
+input[type="text"], textarea, input[type="submit"] {
+	appearance:none;
+	-webkit-appearance:none;
+	-moz-appearance:none;
+	outline:none;
+	border-radius:0px;
+	font-family: 'Open Sans', sans-serif;
+}
+
+::-webkit-input-placeholder {}
+
+.panel {
+	float:left;
+	width:100%;
+	border-radius:0px;
+	padding:0px;
+	margin:0px;
+	box-shadow:none;
+	background:none;
+	border:none;
+}
+
+.flush {
+	padding:0px;
+}
+
+.flush-left {
+	padding-left:0px;
+}
+
+.flush-right {
+	padding-right:0px;
+}
+
+ul {
+	margin:0px;
+	padding:0px;
+}
+
+section {
+	float:left;
+	width:100%;
+}
+
+.row-eq-height {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+}
+
+.tablerow {
+	display:table;
+	width:100%;
+	height:100%;
+	vertical-align:middle;
+}
+
+.tablecell {
+	display:table-cell;
+	width:100%;
+	height:100%;
+	vertical-align:middle;
+}
+
+/************ Fonts Css ************/
+h1,h2,h3,h4,h5,h6 {
+	font-family: 'Montserrat', sans-serif;
+	font-family: 'Roboto', sans-serif;
+}
+
+@font-face {
+    font-family: 'BEBAS';
+    src: url('../fonts/BEBAS.eot');
+    src: url('../fonts/BEBAS.eot') format('embedded-opentype'),
+         url('../fonts/BEBAS.woff2') format('woff2'),
+         url('../fonts/BEBAS.woff') format('woff'),
+         url('../fonts/BEBAS.ttf') format('truetype'),
+         url('../fonts/BEBAS.svg#BEBAS') format('svg');
+}
+
+@font-face {
+    font-family: 'DroidSerifBoldItalic';
+    src: url('../fonts/DroidSerifBoldItalic.eot');
+    src: url('../fonts/DroidSerifBoldItalic.eot') format('embedded-opentype'),
+         url('../fonts/DroidSerifBoldItalic.woff2') format('woff2'),
+         url('../fonts/DroidSerifBoldItalic.woff') format('woff'),
+         url('../fonts/DroidSerifBoldItalic.ttf') format('truetype'),
+         url('../fonts/DroidSerifBoldItalic.svg#DroidSerifBoldItalic') format('svg');
+}
+
+p,label {
+	font-family: 'Montserrat', sans-serif;
+	font-family: 'Roboto', sans-serif;
+}
+
+body {
+	font-family: 'Montserrat', sans-serif;
+	font-family: 'Roboto', sans-serif;
+	background:#fff;
+}
+
+.btn-success,.btn-info,.btn-primary {
+	display:inline-block;
+}
+
+@media (min-width: 992px) {
+.dropdown:hover>.dropdown-menu {
+	display: block;
+}
+}
+
+.show>.dropdown-menu {
+	display: block;
+	position:absolute;
+	top:100%;
+	left:0;
+}
+
+.dropdown-menu {
+	background:#181818;
+	padding:0px;
+	border:none;
+	border-radius:0px;
+	margin:0;
+}
+
+.dropdown-item {
+	color: #b9b9b9;
+    font-size: 14px;
+    text-transform: uppercase;
+    min-width: 90px;
+    line-height: 25px;
+    padding: 0px;
+    border-radius: 0px;
+	padding:0px 15px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+
+.dropdown-item:hover {
+	color: #181818;
+    background: #7bcf20;
+}
+
+li.nav-item {
+    display: inline-block;
+	min-height: 40px;
+	z-index: 99;
+	margin-left: 5px;
+}
+/************ Menu Css ************/
+.navbar {
+	padding:0px 15px;
+}
+
+.navbar-light .navbar-toggler-icon {
+    background:url(../img/menu2.svg) 50% 50% no-repeat;
+	background-size:100% 100%;
+}
+
+.navbar-toggler-icon {
+    width: 40px;
+    height: 25px;
+}
+
+.navbar-light .navbar-toggler {
+	margin-top:30px;
+}
+
+.navbar-brand {
+	padding:10px 0px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+	color:#b9b9b9;
+	font-size:14px;
+	text-transform:uppercase;
+	min-width:90px;
+	line-height:25px;
+	padding:0px;
+	border-radius:3px;
+	text-align:center;
+	font-family: 'Roboto', sans-serif;
+	font-weight:500;
+}
+
+.navbar-light .navbar-nav .nav-link.login {
+	color:#7bcf20;
+	border:1px solid #7bcf20;
+	min-width:72px;
+	line-height:23px;
+}
+
+.navbar-light .navbar-nav .nav-link.login:hover {
+	background:#7bcf20;
+}
+
+.navbar-light .navbar-nav .nav-link.sign {
+	color:#009adb;
+	border:1px solid #009adb;
+	min-width:72px;
+	line-height:23px;
+	margin-left:10px;
+}
+
+.navbar-light .navbar-nav .nav-link.sign:hover {
+	background:#009adb;
+}
+
+.navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link.active {
+	color:#181818;
+	background:#7bcf20;
+}
+
+.navbar-light .navbar-nav .nav-link.email {
+	color:#fff;
+	font-size:13px;
+	background:#009adb;
+	border:none;
+	border:1px solid #009adb;
+	padding:0px 15px;
+	line-height:30px;
+	border-radius:0px 0px 3px 3px;
+	margin-top: -5px;
+	margin-bottom: 18px;
+}
+
+.navbar-light .navbar-nav .nav-link.email img {
+	margin-right:7px;
+}
+
+ul.navbar-nav.right.mr-auto {
+	width: 100%;
+    display: inline-block;
+    float: right;
+    text-align: right;
+}
+
+li.nav-item {
+    display: inline-block;
+	min-height:47.5px;
+}
+
+
+@media (min-width: 992px){
+div#navbarSupportedContent {
+	display: inline-block !important;
+}
+}
+
+ul.navbar-nav.top-right.mr-auto {
+	display: inline-block;
+    float: right;
+}
+
+/************ Heading & Paragraph Css ************/
+h1 {
+	font-family: 'Montserrat', sans-serif;
+	color:#181818;
+	font-size:36px;
+	line-height:36px;
+	font-weight:900;
+	text-transform:uppercase;
+	margin-bottom:70px;
+}
+
+h1 span {
+	color:#7bcf20;
+}
+
+h1 span.blue {
+	color:#009adb;
+}
+
+h2 {
+	color:#7bcf20;
+	font-size:36px;
+	line-height:36px;
+	font-weight:900;
+	text-transform:uppercase;
+	margin-bottom:20px;
+}
+
+h2 span {
+	color:#363636;
+	font-size:18px;
+	line-height:24px;
+	font-weight:500;
+}
+
+h2 span.blue {
+	color:#009adb;
+	font-size:36px;
+	line-height:36px;
+	font-weight:900;
+}
+
+h3 {
+	color:#181818;
+	font-size:27px;
+	line-height:36px;
+	font-weight:900;
+	text-transform:uppercase;
+	margin-bottom:0px;
+	font-family: 'Montserrat', sans-serif;
+}
+
+h3.white-c {
+	color:#fff;
+}
+
+p {
+	color:#363636;
+	font-size:14px;
+	line-height:23px;
+	font-weight:400;
+	font-family: 'Roboto', sans-serif;
+	margin-bottom:35px;
+}
+
+h6 {
+	color:#363636;
+	font-size:18px;
+	line-height:27px;
+	font-weight:400;
+	font-family: 'Roboto', sans-serif;
+}
+
+h6.sm {
+	font-size:14px;
+	margin-bottom:30px;
+} 
+
+h6 img {
+	margin:0px 15px;
+}
+
+img.fullwidth {
+	width:100%;
+}
+
+h6.bd {
+	position:relative;
+    font-size: 21px;
+	display:inline-block;
+	font-family: 'Montserrat', sans-serif;
+}
+
+h6.bd:before {
+	content:'';
+	width:90px;
+	height:1px;
+	background:#181818;
+	position:absolute;
+	top:12px;
+	left:-111px;
+}
+
+h6.bd:after {
+	content:'';
+	width:90px;
+	height:1px;
+	background:#181818;
+	position:absolute;
+	top:12px;
+	right:-111px;
+}
+
+/************ Butttons Css ************/
+.btn {
+	display:inline-block;
+	color:#fff;
+	font-size:14px;
+	background:#7bcf20;
+	min-width:153px;
+	line-height:32px;
+	padding:0px;
+	border-radius:3px;
+	font-family: 'Roboto', sans-serif;
+	font-weight:400;
+}
+
+.btn:hover {
+	color:#fff;
+	background:#000;
+}
+
+
+/************ Form Input Css ************/
+input {
+	display:inline-block;
+	width:100%;
+	border:1px solid #b9b9b9;
+	padding-left:15px;
+	font-family: 'Roboto', sans-serif;
+	color:#999999;
+	font-size:14px;
+	height:36px;
+	box-shadow:none;
+	border-radius:3px !important;
+	margin-bottom:20px;
+}
+
+input[type="submit"] {
+	background:#7bcf20;
+	color:#fff;
+	padding:0px;
+	border:none;
+	font-weight:bold;
+	letter-spacing:1px;
+	cursor:pointer;
+}
+
+::-webkit-input-placeholder {
+	color:#999999;
+}
+
+input.user {
+	background:#fff url(../img/icon-user.png) 96% 50% no-repeat;
+}
+
+input.email {
+	background:#fff url(../img/icon-email-skyblue.png) 96% 50% no-repeat;
+}
+
+input.phone {
+	/*background:#fff url(../img/icon-user.png) 96% 50% no-repeat;*/
+	background:#fff url(../img/icon-phone.png) 96% 50% no-repeat;
+}
+
+textarea {
+	display:inline-block;
+	width:100%;
+	border:1px solid #b9b9b9;
+	padding:10px 40px 0px 15px;
+	background:#fff url(../img/icon-chat.png) 96% 8px no-repeat;
+	font-family: 'Roboto', sans-serif;
+	color:#999999;
+	font-size:14px;
+	height:60px;
+	box-shadow:none;
+	border-radius:3px !important;
+	margin-bottom:20px;
+	resize:none;
+}
+
+/************ Bxslider Css ************/
+.bx-wrapper {
+	margin-bottom:0px;
+}
+
+.bx-wrapper img {
+	display:inline-block;
+}
+
+.bx-wrapper .bx-pager.bx-default-pager a {
+	border:1px solid #363636;
+	background:none;
+	width:16px;
+	height:16px;
+	border-radius:50%;
+	position:relative;
+}
+
+.bx-wrapper .bx-pager.bx-default-pager a:after {
+	content:'';
+	width:8px;
+	height:8px;
+	background:#363636;
+	border-radius:50%;
+	position:absolute;
+	top:3px;
+	left:3px;
+}
+
+.bx-wrapper .bx-pager.bx-default-pager a:hover, .bx-wrapper .bx-pager.bx-default-pager a.active {
+	border-color:#009adb;
+	background:none;
+}
+
+.bx-wrapper .bx-pager.bx-default-pager a:hover:after, .bx-wrapper .bx-pager.bx-default-pager a.active:after {
+	background:#009adb;
+}
+
+.bx-wrapper .bx-pager {
+	max-width:300px;
+	margin:0 auto;
+	right:10%;
+}
+
+.bx-wrapper .bx-pager .bx-pager-item, .bx-wrapper .bx-controls-auto .bx-controls-auto-item {
+    float: right;
+}
+
+.bx-wrapper .bx-pager, .bx-wrapper .bx-controls-auto {
+	padding:0px;
+    bottom: 65px;
+}
+
+/************ Accordion Css ************/
+.card {
+	border:none;
+	border-radius:0px;
+	background:none;
+	margin-bottom:25px;
+}
+
+.card-header {
+	border:none;
+	border-radius:0px;
+	background:none;
+	padding:0px;
+}
+
+.card-header .card-link {
+	display: inline-block;
+	border:none;
+	border-radius:0px;
+	background:none;
+	padding:0px;
+	color:#fff;
+	font-weight:bold;
+	font-size:18px;
+	padding:0px 0px;
+	padding-left:45px;
+	background:url(../img/icon-minus.png) 0% 50% no-repeat;
+}
+
+.card-header .card-link.collapsed {
+	background:url(../img/icon-plus.png) 0% 50% no-repeat;
+}
+
+/************ General Css ************/
+a, a:hover, a:focus {
+	text-decoration:none;
+	color:inherit;
+}
+
+.column-centered {
+	display:inline-block;
+	margin:0 auto;
+	float:none;
+}
+
+/* Header Style */
+#header {
+	background:#181818;
+	border-top:5px solid #009adb;
+}
+
+.bg-faded {
+	background:none;
+}
+
+/* Banner Style */
+#banner li {
+	padding:160px 0px;
+}
+
+#banner p {
+	font-size:16px;
+	line-height:23px;
+	margin-bottom:30px;
+}
+
+#banner.services {
+	background:url(../img/banner-services.png) 50% 50% no-repeat;
+	background-size:cover;
+	padding-top:300px;
+}
+
+#banner.services .bg {
+	background:url(../img/overlay.png) 50% 50% no-repeat;
+	background-size:cover;
+	padding-top:140px;
+}
+
+#banner.services .bg h1 {
+	color:#fff;
+	font-size:72px;
+	margin:0px 0px 20px 0px;
+	font-weight:700;
+}
+
+#banner.home-page .row {
+	display: -webkit-block;
+	display: -webkit-block;
+	display: -ms-block;
+	display: block;
+	-webkit-flex-wrap: nowrap;
+	-ms-flex-wrap: nowrap;
+	flex-wrap: nowrap;
+}
+
+#banner.home-page {
+}
+
+.get {
+	display:inline-block;
+	color:#181818;
+	font-size:18px;
+	font-weight:900;
+	background:#fff url(../img/arrow-green-right.png) 100% 50% no-repeat;
+	text-align:center;
+	min-width:257px;
+	line-height:50px;
+	letter-spacing:1px;
+	border-radius:3px;
+	padding:0px;
+	padding-right:44px;
+	vertical-align:middle;
+}
+
+.get:hover {
+	color:#181818;
+}
+
+.get.shadow {
+	box-shadow: 0px 0px 5px #c8c8c8;
+}
+
+#banner.s-polling {
+	background:url(../img/banner-polling.png) 50% 50% no-repeat;
+	background-size:cover;
+	padding-top:20px;
+	padding-bottom:250px;
+}
+
+#banner.s-polling h6 {
+	color:#fff;
+	font-size:27px;
+	text-transform:uppercase;
+}
+
+#banner.s-polling h1 {
+	color:#fff;
+	font-size:72px;
+	line-height:72px;
+	margin:0px 0px 20px 0px;
+	font-weight:700;
+}
+
+#banner.charity {
+	background:url(../img/banner-charity.png) 90% 50% no-repeat;
+	background-size:cover;
+	padding-top:280px;
+}
+
+#banner.charity .bg {
+	background:url(../img/overlay-banner.png) 50% 50% no-repeat;
+	background-size:cover;
+	padding-top:70px;
+	padding-bottom:30px;
+}
+
+#banner.charity .bg h1 {
+	font-size:54px;
+	display:inline-block;
+	width:100%;
+}
+
+#banner.charity h6 {
+	color:#fff;
+	font-size:27px;
+	text-transform:uppercase;
+	margin-bottom:30px;
+	display:inline-block;
+	width:100%;
+}
+
+#banner.s-marketting {
+	background:url(../img/banner-s-marketting.png) 50% 50% no-repeat;
+	background-size:cover;
+	padding:0px;
+}
+
+#banner.s-marketting .bg {
+	background:url(../img/overlay-s-marketting.png) 100% 50% no-repeat;
+	padding:130px 0px 145px 0px;
+}
+
+#banner.s-marketting h6 {
+	color:#fff;
+	font-family: 'Montserrat', sans-serif;
+	font-size:27px;
+	text-transform:uppercase;
+	margin-bottom:0px;
+	display:inline-block;
+	width:100%;
+}
+
+#banner.s-marketting h1 {
+	line-height:72px;
+}
+
+#banner.s-polling.t-show {
+	background:url(../img/banner-t-show.png) 50% 50% no-repeat;
+	background-size:cover;
+	padding:0px 0px 250px 0px;
+}
+
+#banner.s-polling.t-show .bg {
+	background:url(../img/overlay-t-show.png) 50% 50% no-repeat;
+	padding:50px 0px;
+	display:inline-block;
+	width:100%;
+	background-size:contain;
+	margin-top:-8px;
+}
+
+#banner.p-election {
+	background:url(../img/banner-p-election.png) top center no-repeat;
+	padding:25px 0px;
+	background-size:cover;
+}
+
+#banner.p-election .bg-blue {
+	background:rgba(0,154,219,0.8);
+	padding:130px 0px 100px 0px;
+	border-radius:50%;
+}
+
+#banner.magazines {
+	background:url(../img/banner-magazines.png) top center no-repeat;
+	padding:225px 0px 100px 0px;
+	background-size:cover;
+}
+
+#banner.magazines h6 {
+	color:#363636;
+	font-size:18px;
+	font-weight:bold;
+}
+
+#banner.magazines h1 {
+	color:#009adb;
+	font-weight:bold;
+}
+
+#banner.magazines .get {
+	box-shadow:0px 0px 3px 0px rgba(0,0,0,0.5);
+}
+
+#banner.magazines h5 {
+	box-shadow:0px 0px 3px 0px rgba(0,0,0,0.5);
+}
+
+/************ Magazines-work Style *************/
+#magazines-work {
+	padding:30px 0px 100px 0px;
+}
+
+#magazines-work h3 {
+	color: #009adb;
+    font-size: 36px;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin: 0px 0px 40px 0px;
+}
+
+#magazines-work h3 span {
+    color: #7bcf20;
+}
+
+#magazines-work p {
+	margin-bottom:0px;
+}
+
+#magazines-work h4 {
+	color: #009adb;
+    font-size: 27px;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin: 0px 0px 10px 0px;
+}
+
+#magazines-work h4 span {
+    color: #7bcf20;
+}
+
+#magazines-work h5 {
+	color: #d9d9d9;
+    font-size: 45px;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin: 7px 0px 10px 0px;
+	padding:0px 35px;
+}
+
+#magazines-work .bg-1 {
+	background:url(../img/plane-1.png) 48.5% 100% no-repeat;
+	padding-bottom:20px;
+}
+
+#magazines-work .bg-2 {
+	background:url(../img/line-2.png) 48.5% 0% no-repeat;
+	padding-top:5px;
+	padding-bottom:60px;
+	margin-top:-8px;
+}
+
+#magazines-work .t-top {
+	margin-top:-35px;
+}
+
+#magazines-work .left h5 {
+	padding:0px;
+	padding-left:60px;
+}
+
+/************ service-team Style *************/
+#solution-service {
+	background:#fff url(../img/arrow-2.png) 50% 50% no-repeat;
+	background-size:100% 70%;
+	/*background:url(../img/blue-arrow-left.png) 0% 85% no-repeat, url(../img/green-arrow-right.png) 100% 15% no-repeat;*/
+	padding:40px 0px 0px 0px;
+}
+
+#solution-service h3 {
+	color:#009adb;
+	font-size:36px;
+	font-weight:900;
+	text-transform:uppercase;
+	margin-bottom:60px;
+}
+
+#solution-service h3 span {
+	color:#7bcf20;
+}
+
+#solution-service h4 {
+	color:#181818;
+	font-size:18px;
+	font-weight:900;
+	text-transform:uppercase;
+}
+
+#solution-service p {
+	margin:0px;
+}
+
+#solution-service .s-right {
+	padding-right:50px;
+	padding-bottom:60px;
+}
+
+#solution-service .s-left {
+	padding-left:50px;
+	padding-bottom:60px;
+}
+
+/************ news-info Style ************/
+#news-info {
+	background:#181818;
+	padding:70px 0px;
+}
+
+#news-info .bg-1 {
+	background:url(../img/news-info-1.png) 50% 50% no-repeat;
+	background-size:cover;
+	padding:10px 10px;
+}
+
+#news-info .bg-1 p {
+	margin-bottom:30px;
+}
+
+#news-info .bg-2 {
+	background:url(../img/news-info-2.png) 50% 50% no-repeat;
+	background-size:cover;
+	padding:10px 10px;
+}
+
+#news-info .bg-3 {
+	background:url(../img/news-info-3.png) 50% 50% no-repeat;
+	background-size:cover;
+	padding:10px 10px;
+}
+
+#news-info .bg-4 {
+	background:url(../img/news-info-4.png) 50% 50% no-repeat;
+	background-size:cover;
+	padding:10px 10px;
+	margin-top:60px;
+}
+
+#news-info .bg-5 {
+	background:url(../img/news-info-5.png) 50% 50% no-repeat;
+	background-size:cover;
+	padding:10px 10px;
+	margin-top:60px;
+}
+
+#news-info .bg-2 p {
+}
+
+#news-info .read {
+	margin-bottom:20px;
+}
+
+.read.green {
+	color: #7bcf20;
+}
+
+#news-info .bd {
+	border:3px solid #fff;
+	border-radius:3px;
+	padding:15px 30px;
+}
+
+#news-info h4 {
+	color:#fff;
+	font-size:27px;
+	line-height:27px;
+	font-weight:900;
+	text-transform:uppercase;
+	margin:0px;
+}
+
+#news-info hr {
+	border-color:#fff;
+	border-width:5px;
+	display:inline-block;
+	width:100%;
+}
+
+#news-info p {
+	color:#fff;
+	line-height:27px;
+	margin-top:10px;
+	margin-bottom:15px;
+}
+
+#news-info h6 {
+	color:#fff;
+	font-weight:bold;
+	font-size:18px;
+	text-transform:uppercase;
+}
+
+#news-info ul {
+	margin:0px;
+	padding:0px;
+}
+
+#news-info .outside {
+	margin-top:-35px;
+}
+
+#news-info .outside p {
+	margin:0px;
+}
+
+#news-info .outside p span {
+	margin-right:10px;
+}
+
+/************ service-team Style *************/
+#service-team {
+	background:#272727;
+	background: linear-gradient(90deg, #272727 50%, #fff 50%);
+}
+
+#service-team h6 {
+	color:#ffffff;
+	font-size:18px;
+	font-family: 'Montserrat', sans-serif;
+	text-transform:uppercase;
+	margin:0px;
+}
+
+#service-team h3 {
+	color:#009adb;
+	font-size:27px;
+	line-height:36px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight:400;
+	margin:0px;
+	text-transform:uppercase;
+}
+
+#service-team h3 span {
+	color:#7bcf20;
+}
+
+#service-team .left p {
+	color:#b9b9b9;
+	font-size:14px;
+	line-height:27px;
+}
+
+#service-team .left hr {
+	border-top:1px solid #181818;
+	border-bottom:1px solid #2e2e2d;
+	margin-top:20px;
+	margin-bottom:20px;
+}
+
+#service-team .bg-white {
+	background:#fff;
+	position:relative;
+	padding-left:60px;
+}
+
+#service-team .b-right {
+	border-right:1px solid #b9b9b9;
+	border-bottom:1px solid #b9b9b9;
+	padding-top:30px;
+}
+
+#service-team .b-left {
+	border-left:none;
+	padding-top:30px;
+	border-bottom:1px solid #b9b9b9;
+}
+
+#service-team .last {
+	border-bottom:none;
+}
+
+#service-team .ft {
+	padding-top:40px;
+}
+
+#service-team .bg-white:before {
+    content: '';
+    position: absolute;
+    top: 40%;
+    left: -23px;
+    margin-top: -17px;
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 18px 23px 18px 0;
+    border-color: transparent #fff transparent transparent;
+    z-index: 99;
+}
+
+#service-team h4 {
+	color:#181818;
+	font-size:18px;
+	font-weight:900;
+	text-transform:uppercase;
+	margin:15px 0px 0px 0px;
+}
+
+#service-team .bg-white p {
+	margin-top:20px;
+	margin-bottom:20px;
+}
+
+#service-team .right-s {
+	padding-right:70px;
+}
+
+#service-team .left-s {
+	padding-left:70px;
+}
+
+#service-team .left {
+	padding-right:40px;
+}
+
+#service-team .left h6 {
+	margin-top:70px;
+}
+/* Title Black Style */
+#title-black {
+	background:#181818;
+	padding:65px 0px 50px 0px;
+	margin-top:-37px;
+}
+
+/************ Welcome Text Style ************/
+#welcome-text {
+	padding:70px 0px 55px 0px;
+}
+
+#welcome-text.services {
+	padding:30px 0px;
+}
+
+#welcome-text.services h6 , #welcome-text.services h6.bd {
+	position:relative;
+    font-size: 21px;
+	display:inline-block;
+	font-family: 'Montserrat', sans-serif;
+}
+
+#welcome-text.services h6:before ,#welcome-text.services h6.bd:before {
+	content:'';
+	width:90px;
+	height:1px;
+	background:#181818;
+	position:absolute;
+	top:12px;
+	left:-111px;
+}
+
+#welcome-text.services h6:after, #welcome-text.services h6.bd:after {
+	content:'';
+	width:90px;
+	height:1px;
+	background:#181818;
+	position:absolute;
+	top:12px;
+	right:-111px;
+}
+
+#welcome-text.s-polling {
+	background:#181818;
+	padding:30px 0px 60px 0px;
+}
+
+#welcome-text.s-polling h6.bd {
+	color:#fff;
+	font-size:18px;
+	text-transform:uppercase;
+}
+
+#welcome-text.s-polling h6.bd:before,#welcome-text.s-polling h6.bd:after {
+	content:'';
+	background:#fff;
+}
+
+#welcome-text.s-polling h3 {
+	color:#009adb;
+	font-size:27px;
+	font-weight:900;
+	text-transform:uppercase;
+	font-family: 'Montserrat', sans-serif;
+	margin-bottom:40px;
+}
+
+#welcome-text.s-polling h3 span.green {
+	color:#7bcf20;
+}
+
+#welcome-text.s-polling .bg-white {
+	background:#fff;
+	padding:25px 20px 17px 20px;
+}
+
+#welcome-text.s-polling .align {
+	position:absolute;
+	top:0;
+	left:0;
+	background:url(../img/box-blue.png) 50% 50% no-repeat;
+	width:78px;
+	height:77px;
+	color:#181818;
+	font-size:23px;
+	font-weight:bold;
+	font-family: 'Roboto', sans-serif;
+	padding-left:10px;
+	padding-top:5px;
+}
+
+#welcome-text.s-polling .align.green {
+	background:url(../img/box-green.png) 50% 50% no-repeat;
+}
+
+#welcome-text.s-polling h4 {
+	color:#009adb;
+	font-size:18px;
+	font-weight:900;
+	text-transform:uppercase;
+}
+
+.position-normal {
+	position: relative !important;
+	z-index: 99999 !important;
+}
+
+#welcome-text.s-polling h4.green {
+	color:#7bcf20;
+}
+
+#welcome-text.s-polling p {
+	line-height:24px;
+	margin-bottom:0px;
+}
+
+#welcome-text.s-polling .row-top {
+	margin-top:60px;
+}
+
+#welcome-text.charity {
+	padding-top:150px;
+	margin-top:-150px;
+}
+
+#welcome-text.charity p {
+	color:#b9b9b9;
+	margin-bottom:25px;
+}
+
+#welcome-text.charity p b {
+	color:#fff;
+}
+
+#welcome-text.charity .bg {
+	display: inline-block;
+	width: 100%;
+	background: url(../img/charity-team.png) 0% 50% no-repeat;
+	background-size: 45% 95%;
+	padding:75px 0px;
+}
+
+#welcome-text.s-marketting h3 {
+	margin-bottom:25px;
+}
+
+#welcome-text.s-marketting {
+	background:#272727 url(../img/bg-pat.png) 50% 50% no-repeat ;
+	margin:0px;
+	padding:30px 0px 35px 0px;
+}
+
+#welcome-text.s-marketting .bg-blue {
+	border:5px solid #cfcfd1;
+	background:url(../img/bg-blue-img.png) top center no-repeat;
+	background-size:cover;
+	padding:0px 40px;
+	padding-bottom:30px;
+}
+
+#welcome-text.s-marketting .bg-green {
+	border:5px solid #cfcfd1;
+	background:url(../img/bg-green-img.png) top center no-repeat;
+	background-size:cover;
+	padding:0px 40px;
+	padding-bottom:30px;
+}
+
+#welcome-text.s-marketting .bg-green .read {
+	color:#7bcf20;
+}
+
+#welcome-text.s-marketting h4 {
+	color:#fff;
+	font-size:27px;
+	font-weight:900;
+	border-bottom:1px dotted #fff;
+	line-height:60px;
+	margin-bottom:30px;
+}
+
+#welcome-text.s-marketting p {
+	color:#fff;
+	font-size:18px;
+	font-weight:400;
+	line-height:27px;
+	margin-bottom:20px;
+}
+
+.read {
+	display:inline-block;
+	background:#fff;
+	color:#009adb;
+	font-size:14px;
+	font-weight:bold;
+	line-height:32px;
+	min-width:153px;
+	border-radius:3px;
+}
+
+#welcome-text.p-election {
+	background:#fff url(../img/bg-p-election.png) 50% 0% no-repeat;
+	padding: 50px 0px 40px 0px;
+}
+
+#welcome-text.p-election p {
+	margin-bottom:25px;
+}
+
+#welcome-text.p-election h6.bd {
+	color:#181818;
+	font-size:18px;
+}
+
+#welcome-text.p-election h6.bd:after, #welcome-text.p-election h6.bd:before {
+	background:#181818;
+}
+
+#welcome-text.p-election h3 {
+    color: #009adb;
+    font-size: 36px;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 30px;
+}
+
+#welcome-text.p-election h3 span.green {
+    color: #7bcf20;
+}
+
+#welcome-text.magazines {
+	background:#181818 url(../img/bg-pat-2.png) 50% 0% no-repeat;
+	margin:0px;
+	padding:12px 0px 12px 0px;
+}
+
+#welcome-text.magazines h3 {
+	margin-bottom:25px;
+	margin-top:10px;
+}
+
+#welcome-text.magazines p {
+	color:#b9b9b9;
+	line-height:27px;
+	margin-bottom:25px;
+	margin-top:0px;
+}
+/************ Charity info Style ************/
+#charity-info {
+	background:url(../img/left-bg.png) 2% 43% no-repeat, url(../img/right-bg.png) 98% 0% no-repeat, url(../img/bg-hands.png) 50% 100% no-repeat, url(../img/bg-charity-white.png) top left no-repeat;
+	background-color:#181818;
+	background-size:auto auto,auto auto,100% 65%, 100% 100%;
+	padding-top:145px;
+	padding-bottom:150px;
+	margin-top: -82px;
+	position:relative;
+}
+
+#charity-info h6 {
+	text-transform:uppercase;
+}
+
+#charity-info .title p {
+	font-family: 'Montserrat', sans-serif;
+	color:#363636;
+	font-size:27px;
+	text-transform:uppercase;
+	line-height:36px;
+	margin-bottom:20px;
+}
+
+#charity-info .title p span {
+	color:#009adb;
+	font-weight:900;
+}
+
+#charity-info .title p span.green {
+	color:#7bcf20;
+	font-weight:900;
+}
+
+#charity-info h3 {
+    font-family: 'BEBAS';
+	color:#1bb88d;
+	font-size:85px;
+	line-height:95px;
+	font-weight:900;
+	text-transform:uppercase;
+	text-shadow:
+	3px 3px 0 #fff,
+	-1px -1px 0 #fff,  
+	1px -1px 0 #fff,
+	-1px  1px 0 #fff,
+	1px  1px 0 #fff;
+	margin:0px;
+	margin-bottom:40px;
+}
+
+#charity-info h3 span.c-1 {
+	color:#f89832;
+}
+
+#charity-info h3 span.c-2 {
+	color:#e73861;
+}
+
+#charity-info h3 span.c-3 {
+	color:#cee040;
+}
+
+#charity-info h3 span.c-4 {
+	color:#f4dc24;
+}
+
+#charity-info h3 span.c-5 {
+	color:#f89832;
+}
+
+#charity-info h3 span.c-1 {
+	color:#f89832;
+}
+
+.footer-charity {
+	position:absolute;
+	bottom:0px;
+	max-height:120px;
+}
+
+/************ Services Style ************/
+#services {
+	background:#181818;
+	padding:40px 0px 30px 0px;
+}
+
+#services .title h6 {
+	color:#b9b9b9;
+}
+
+#services .bg-blue {
+	background:#009adb;
+	position:relative;
+}
+
+#services .bg-blue:after {
+	content:'';
+	position:absolute;
+	top:50%;
+	left:-26px;
+	margin-top:-20px;
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 19.5px 26px 19.5px 0;
+    border-color: transparent #009adb transparent transparent;
+	z-index:99;
+}
+
+#services .bg-blue.right:after {
+	content:'';
+	position:absolute;
+	top:50%;
+	left:auto;
+	right:-26px;
+	margin-top:-20px;
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 19.5px 0 19.5px 26px;
+    border-color: transparent transparent transparent #009adb;
+}
+
+#services .bg-green {
+	background:#7bcf20;
+	padding:10px 0px;
+}
+
+#services .bd {
+	border:5px solid #363636;
+	border-radius:3px;
+	margin-bottom:35px;
+}
+
+#services .sp {
+	padding:10px 25px;
+}
+
+#services p {
+	color:#fff;
+	margin-bottom:25px;
+}
+
+#services .btn {
+	border:1px solid #fff;
+	color:#fff;
+	background:none;
+}
+
+#services .btn:hover {
+	background:#fff;
+	color:#000;
+}
+
+#services h4 {
+	color:#fff;
+	font-size:18px;
+	font-weight:700;
+	text-transform:uppercase;
+	margin:0px 0px;
+}
+
+#services.services {
+	background:#fff;
+}
+
+#services.services h3 {
+	color:#181818;
+	font-size:36px;
+	font-weight:400;
+	margin-bottom:50px;
+}
+
+#services.services h3 span {
+    color: #009adb;
+	font-weight:900;
+}
+
+#services.services h3 span.green {
+	color: #7bcf20;
+	font-weight:900;
+}
+
+#services.services h4 {
+	color:#363636;
+	font-size:27px;
+	font-weight:900;
+	text-transform:uppercase;
+	margin-bottom:25px;
+}
+
+#services.services p {
+	color:#363636;
+	line-height:23px;
+	margin-bottom:20px;
+}
+
+#services.services .bg-1 {
+	display:inline-block;
+	width:100%;
+	background:url(../img/service-pic-1.png) 0% 50% no-repeat;
+	background-size:45% 100%;
+}
+
+#services.services .bg-2 {
+	display:inline-block;
+	width:100%;
+	background:url(../img/service-pic-2.png) 100% 50% no-repeat;
+	background-size:45% 100%;
+}
+
+.row-top {
+	margin-top:70px;
+}
+
+#charity-info.s-polling.charity .row-top {
+	margin-top:70px;
+	height:405px;
+}
+
+#services.s-polling {
+	background:#e1e6ef;
+	background:url(../img/bg-survery.png) 50% 50% no-repeat;
+	background-size:cover;
+	padding:0px;
+}
+
+#services.s-polling .bg-two {
+	background:#e1e6ef;
+	background:url(../img/bg-survery-2.png) 0% 50% no-repeat;
+	background-size:60% 100%;
+	padding:85px 0px;
+}
+
+#services.s-polling .bg-blue {
+	border-radius:3px;
+}
+
+#services.s-polling .bg-blue:after {
+	display:none;
+}
+
+#services.s-polling .bg-black {
+	background:#181818;
+	padding:7px 15px;
+	border-radius:3px 3px 0px 0px;
+}
+
+#services.s-polling .bg-black h4 {
+	color:#009adb;
+	font-size:27px;
+	font-weight:900;
+	text-transform:uppercase;
+	margin:0px;
+}
+
+#services.s-polling .bg-black h4 span {
+	color:#7bcf20;
+}
+
+#services.s-polling .sp {
+	padding:25px 10px 35px 10px;
+}
+
+#services.s-polling p {
+	margin-top:10px;
+	margin-bottom:0px;
+}
+
+#services.s-polling .get {
+	margin-top:10px;
+}
+
+/************ Services-offered Style ************/
+#services-offered {
+	background:#181818;
+	padding:60px 0px 45px 0px;
+}
+
+#services-offered h3 {
+    color: #009adb;
+    font-size: 36px;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 30px;
+}
+
+#services-offered h3 span.green {
+    color: #7bcf20;
+}
+
+#services-offered p {
+	color:#b9b9b9;
+	margin-bottom:70px;
+}
+
+#services-offered .s-right-in {
+	padding-right:50px;
+}
+
+#services-offered .bg-white {
+	background:#fff;
+	position:relative;
+	min-height:99px;
+	padding:23px 20px;
+}
+
+#services-offered .bg-white.img {
+	height:99px;
+	padding:5px 20px;
+}
+
+#services-offered .arrow-right:after {
+	content:'';
+	min-height:99px;
+	width:51px;
+	height:99px;
+	background:url(../img/arrow-right.png) top right no-repeat;
+	position:absolute;
+	top:0px;
+	right:-50px;
+}
+
+#services-offered .arrow-left:after {
+	content:'';
+	min-height:99px;
+	width:51px;
+	height:99px;
+	background:url(../img/arrow-left.png) top left no-repeat;
+	position:absolute;
+	top:0px;
+	left:-50px;
+}
+
+#services-offered .number {
+	color:#fff;
+	font-size:36px;
+	font-weight:bold;
+	background:#009adb;
+	width:45px;
+	height:45px;
+	line-height:45px;
+	border-radius:50%;
+	display:inline-block;
+}
+
+#services-offered .number.green {
+	background:#7bcf20;
+}
+
+#services-offered .bg-white p {
+	color:#363636;
+	font-size:18px;
+	line-height:18px;
+	margin:12px 0px 0px 0px;
+	font-weight:900;
+	text-transform:uppercase;
+}
+
+#services-offered .bg-white p.tp {
+	margin-top:5px;
+}
+
+#services-offered .s-top {
+	margin-top:5px;
+}
+
+#services-offered .row-bottom {
+	margin-bottom:60px;
+}
+
+/************ Political Candidates Style ************/
+#p-candidates {
+	background:#fff url(../img/bg-map.png) 50% 100% no-repeat;
+	background-size:100% auto;
+	padding:0px 0px;
+	position:relative;
+	overflow:hidden;
+}
+
+#p-candidates h3 {
+    color: #009adb;
+    font-size: 36px;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom:0px;
+}
+
+#p-candidates h3 span.green {
+    color: #7bcf20;
+}
+
+#p-candidates .middle {
+	margin-top:120px;
+}
+
+#p-candidates .r-top-m {
+	margin-top:-100px;
+}
+
+#p-candidates .m-minus {
+	margin-top:-90px;
+}
+
+#p-candidates .bg-border  {
+	background: rgba(218,2,52,1);
+	background: -moz-linear-gradient(top, rgba(218,2,52,1) 0%, rgba(0,70,199,1) 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(218,2,52,1)), color-stop(100%, rgba(0,70,199,1)));
+	background: -webkit-linear-gradient(top, rgba(218,2,52,1) 0%, rgba(0,70,199,1) 100%);
+	background: -o-linear-gradient(top, rgba(218,2,52,1) 0%, rgba(0,70,199,1) 100%);
+	background: -ms-linear-gradient(top, rgba(218,2,52,1) 0%, rgba(0,70,199,1) 100%);
+	background: linear-gradient(to bottom, rgba(218,2,52,1) 0%, rgba(0,70,199,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#da0234', endColorstr='#0046c7', GradientType=0 );
+	padding:7px;
+	position:relative;
+}
+
+#p-candidates .bg-white {
+	background:#fff;
+	padding:10px 10px 70px 30px;
+	position:relative;
+}
+
+#p-candidates .position {
+	position:relative;
+}
+
+#p-candidates .align {
+	position:absolute;
+	top:-88px;
+	left:-57px;
+}
+
+#p-candidates .align-right {
+	position:absolute;
+	bottom:0px;
+	right:0px;
+	max-width:400px;
+	z-index:999;
+}
+
+#p-candidates .align.right {
+	position:absolute;
+	top: -88px;
+	left: auto;
+	right: -57px;
+}
+
+#p-candidates p {
+	margin-top:20px;
+	margin-bottom:0px;
+}
+
+#p-candidates .img-star {
+	margin-top:22px;
+}
+
+#p-candidates p b {
+	font-size:18px;
+	font-weight:900;
+}
+
+#p-candidates h5 {
+	color:#da0234;
+	font-size:20px;
+	line-height:23px;
+	padding:8px 0px 5px 0px;
+	margin-bottom:0px;
+	text-transform:uppercase;
+    font-family: 'DroidSerifBoldItalic';
+}
+
+#p-candidates h5 span {
+	font-size:27px;
+}
+
+/************ Charity-profit Style ************/
+#charity-profit {
+	background:url(../img/bg-charity.png) 50% 50% no-repeat;
+	background-size:100% 100%;
+	padding:90px 0px 125px 0px;
+	position:relative;
+	z-index:9;
+}
+
+#charity-profit h6.bd {
+	color:#fff;
+}
+
+#charity-profit h6.bd:after,#charity-profit h6.bd:before {
+	background:#fff;
+}
+
+#charity-profit h3 {
+	color:#009adb;
+	font-size:36px;
+	font-weight:900;
+	font-family: 'Montserrat', sans-serif;
+	margin-bottom:20px;
+}
+
+#charity-profit h3 span {
+	color:#7bcf20;
+}
+
+#charity-profit p {
+	color:#fff;
+	margin-bottom:20px;
+}
+
+
+/************ Services-database Style ************/
+#services-database {
+	border-top:1px solid #e9e9e9;
+	background:#faf9f9;
+}
+
+#services-database h3 {
+	color:#181818;
+	font-size:36px;
+	font-weight:400;
+	margin:35px 0px;
+}
+
+#services-database h3 span {
+    color: #009adb;
+	font-weight:900;
+}
+
+#services-database h3 span.green {
+	color: #7bcf20;
+	font-weight:900;
+}
+
+#services-database .bg {
+	display:inline-block;
+	width:100%;
+	background:url(../img/service-pic-3.png) 0% 50% no-repeat;
+	background-size:45% auto;
+}
+
+#services-database .bg-2 {
+	position:relative;
+	display:inline-block;
+	width:100%;
+	background:url(../img/left-bg.png) 5% 50% no-repeat, url(../img/right-bg.png) 95% 50% no-repeat;
+	background-size:160px 100%, 160px 100%;
+	padding-bottom:40px;
+	overflow:hidden;
+}
+
+#services-database .bg-2 .align-left {
+	position:absolute;
+	top:0;
+	left:-200px;
+}
+
+#services-database .bg-2 .align-right {
+	position:absolute;
+	top:0;
+	right:-200px;
+}
+
+#services-database p {
+	line-height:21px;
+	margin-bottom:20px;
+}
+
+#service-database .row-top {
+	margin-top:100px;
+}
+
+/************ Generate Style ************/
+#generate {
+	background:url(../img/bg-generate.png) 50% 50% no-repeat;
+	background-size:cover;
+	padding:150px 0px;
+}
+
+#generate h6 {
+	color:#fff;
+	position:relative;
+    font-size: 23px;
+	display:inline-block;
+	font-family: 'Montserrat', sans-serif;
+}
+
+#generate h6:before {
+	content:'';
+	width:90px;
+	height:1px;
+	background:#fff;
+	position:absolute;
+	top:12px;
+	left:-111px;
+}
+
+#generate h6:after {
+	content:'';
+	width:90px;
+	height:1px;
+	background:#fff;
+	position:absolute;
+	top:12px;
+	right:-111px;
+}
+
+#generate h3 {
+    color: #fff;
+	font-size:54px;
+	font-weight:900;
+	margin-top:10px;
+}
+
+#generate h3 span.green {
+	color: #7bcf20;
+	font-weight:900;
+}
+
+#generate p {
+    color: #fff;
+	margin:20px 0px 30px 0px;
+}
+
+#generate .call {
+	display:inline-block;
+	background:#fff;
+	padding:5px 10px 5px 5px;
+	border-radius:5px;
+	color:#009adb;
+	font-size:21px;
+	line-height:32px;
+	font-weight:900;
+}
+
+#generate .call span {
+	display:inline-block;
+	background:#009adb;
+	padding:5px;
+	font-weight:400;
+	color:#fff;
+	margin-right:10px;
+}
+
+#generate.s-marketting {
+	background:url(../img/bg-s-marketting.png) 50% 50% no-repeat;
+	background-size:cover;
+}
+
+#generate.t-show {
+	background:url(../img/bg-t-show.png) 50% 50% no-repeat;
+	background-size:cover;
+}
+
+#generate.p-election {
+	background:url(../img/g-p-election.png) 50% 50% no-repeat;
+	background-size:cover;
+}
+
+#generate.magazines {
+	background:url(../img/bg-magazines.png) 50% 50% no-repeat;
+	background-size:cover;
+}
+
+#generate.magazines h3 {
+	font-weight:300;
+	font-size:36px;
+	line-height:54px;
+	margin-bottom:20px;
+}
+
+#generate.magazines h3 b {
+	font-weight:900;
+}
+
+#generate.magazines h3 span {
+	color:#7bcf20;
+	font-weight:900;
+}
+
+/************ Take Business Style *************/
+#take-business {
+	background:#272727 url(../img/bg-t-business.png) 00% 50% no-repeat;
+	background:#272727;
+	background-size:45% 100%;
+	padding:0px 0px;
+	overflow:hidden;
+}
+
+#take-business .bg-take {
+	padding:80px 15px;
+	position:relative;
+}
+
+#take-business .bg-take .align {
+	position:absolute;
+	top:0;
+	left: -160px;
+	height: 100%;
+	max-width: 570px;
+}
+
+#take-business h2 {
+	color:#fff;
+	font-size: 48px;
+	line-height: 54px;
+	margin-top:35px;
+	padding-left:55px;
+	padding-left:0px;
+	font-weight:400;
+	position:relative;
+	display:inline-block;
+}
+
+#take-business h2 img {
+	position:absolute;
+	bottom:-10px;
+	right:-90px;
+}
+
+#take-business h2 span {
+	font-weight:900;
+	font-size: 48px;
+	line-height: 54px;
+}
+
+#take-business h2 span.green {
+	color:#7bcf20;
+	font-size: 48px;
+	line-height: 54px;
+}
+
+#take-business h3 {
+	color:#009adb;
+	font-size: 32px;
+	line-height: 54px;
+	font-weight:900;
+	margin-top:80px;
+	margin-bottom:10px;
+}
+
+#take-business h3 span.green {
+	color:#7bcf20;
+}
+
+#take-business p {
+	color:#b9b9b9;
+	margin-bottom:25px;
+}
+
+#take-business h2 span {
+	font-weight:900;
+	line-height: 54px;
+}
+
+/************ Contact Style ************/
+#contact {
+	padding:50px 0px 50px 0px;
+	background:url(../img/bg-contact.png) 50% 50% no-repeat;
+	background-size:cover;
+}
+
+.pull-right {
+	float:right !important;
+}
+
+#contact .bg-blue {
+	background:#009adb;
+	padding:7px 0px;
+	border-radius:0px;
+}
+
+#contact .shadow {
+	box-shadow:0px 0px 7px 2px rgba(0,0,0,.2);
+}
+
+#contact .bg-white {
+	background:#fff;
+	padding:30px 35px 15px 35px;
+}
+
+#contact h4 {
+	color:#fff;
+	font-size:18px;
+	font-weight:700;
+	text-transform:uppercase;
+	margin:0px 0px;
+}
+
+img {
+	max-width:100%;
+}
+
+/************ Why Choose Style ************/
+#why-choose {
+	padding:50px 0px 75px 0px;
+	background:url(../img/bg-team.png) 50% 50% no-repeat;
+	background-size:100% 100%;
+}
+
+#why-choose h3 {
+	color:#181818;
+	margin-bottom:45px;
+}
+
+#why-choose h6 {
+	color:#181818;
+	font-size:14px;
+	line-height:18px;
+	margin:20px 0px 0px 0px;
+}
+
+#why-choose h4 b {
+	font-size:18px;
+	font-weight:900;
+}
+
+/************ Footer Style ************/
+#footer {
+	background:#181818;
+	padding:65px 0px 40px 0px;
+}
+
+
+#footer h3 {
+	color:#fff;
+	font-size:14px;
+	line-height:14px;
+	text-transform:uppercase;
+	font-weight:400;
+	margin-top:0px;
+	margin-bottom:15px;
+	font-family: 'Roboto', sans-serif;
+}
+
+#footer ul {
+	list-style:none;
+	width:100%;
+	padding:0px;
+	margin:0px;
+}
+
+#footer ul li {
+	padding-bottom:3px;
+}
+
+#footer ul a {
+	color:#b9b9b9;
+	font-size:14px;
+	text-transform:uppercase;
+	font-family: 'Roboto', sans-serif;
+}
+
+#footer .logo p {
+	color:#fff;
+	margin-top:30px;
+	margin-bottom:0px;
+}
+
+#footer .logo p img {
+	margin-left:10px;
+}
+
+#footer p {
+	color:#b9b9b9;
+	font-size:14px;
+	text-transform:uppercase;
+	font-family: 'Roboto', sans-serif;
+	margin-bottom:0px;
+}
+
+#footer input {
+	background:#363636;
+	border:none;
+	height:41px;
+	color:#b9b9b9;
+	font-size:14px;
+	text-transform:uppercase;
+	margin-top:5px;
+}
+
+#footer ::-webkit-input-placeholder {
+	color:#b9b9b9;
+}
+
+#footer button.submit {
+	appearance:none;
+	-webkit-appearance:none;
+	-moz-appearance:none;
+	-ms-appearance:none;
+	background:#7bcf20;
+	color:#fff;
+	line-height:32px;
+	min-width:153px;
+	text-align:center;
+	padding:0px;
+	border:none;
+	font-weight:600;
+	font-size:14px;
+	text-transform:uppercase;
+	font-family: 'Roboto', sans-serif;
+	letter-spacing:1px;
+	border-radius:3px;
+	margin-top:5px;
+	cursor:pointer;
+}
+
+/*****======= Copyright Style Css ======***********/
+#copyright {
+	background:#181818;
+	border-top:1px solid #030303;
+	position:relative;
+}
+
+#copyright:before {
+	content:'';
+	background:#1c1d1d;
+	
+}
+
+#copyright p {
+	color:#b9b9b9;
+	font-size:14px;
+	text-transform:uppercase;
+	font-family: 'Roboto', sans-serif;
+	margin:17px 0px;
+}
+
+/*****======= Responsive Style Css ======***********/
+.visible-xs {
+	display:none;
+}
+
+#welcome-text.home {
+    background: url(../img/logo-left.png) 0% 100% no-repeat, url(../img/logo-right.png) 100% 100% no-repeat;
+}
+
+
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 992px){
+#header li.nav-item span.dropdown-toggle {
+	width:20px;
+	height:20px;
+	padding:10px 0px;
+	display:inline-block !important;
+}
+
+.navbar-light .navbar-nav .nav-link {
+	display:inline-block;
+	vertical-align:middle;
+}
+
+#header li.nav-item span.dropdown-toggle {
+	position:absolute;
+	top:-9px;
+	display:inline-block;
+	vertical-align:middle;
+}
+
+.dropdown-toggle::after {
+	color:#fff;
+}
+}
+
+@media (max-width: 575px) {
+.navbar-default .navbar-brand img {
+}
+
+#banner.services .bg h1 span {
+	display:inline-block;
+	width:100%;
+}
+
+.navbar-default .navbar-toggle {
+	margin-top:15px;
+	border:none;
+	margin-right:0px;
+}
+
+.navbar-collapse {
+	border:none;
+	box-shadow:none;
+}
+
+#header .navbar-default .navbar-nav > li > a {
+	text-align:center;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+	background:#fff;
+}
+
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+	background:none;
+}
+
+.flush-right {
+	padding-right:15px;	
+}
+
+.small-text-left {
+	text-align:left !important;
+}
+
+.small-text-center {
+	text-align:center !important;
+}
+
+.small-text-right {
+	text-align:right !important;
+}
+
+.hidden-xs {
+	display:none !important;
+}
+
+ul.navbar-nav.top-right.mr-auto {
+	width:100%;
+}
+
+#header li {
+	width:100%;
+	margin:5px 0px;
+}
+
+#header a.sign {
+	margin:0px;
+}
+
+.navbar-light .navbar-nav .nav-link.email {
+    margin-bottom: 0px;
+	min-width:100%;
+	margin:0px;
+}
+
+h1 {
+    font-size: 18px;
+    line-height: 26px;
+	margin-top:15px;
+}
+
+h2 {
+    font-size: 20px;
+    line-height: 26px;
+}
+
+h2 span {
+    font-size: 13px;
+}
+
+h2 span.blue {
+    font-size: 30px;
+    line-height: 37px;
+}
+
+h3 {
+    font-size: 18px;
+    line-height: 26px;
+}
+
+#welcome-text.p-election h3, #services-offered h3, #welcome-text.s-polling h3, #p-candidates h3, #magazines-work h3  {
+	font-size:24px !important;
+}
+
+h6.sm {
+    font-size: 10px;
+}
+
+h6 img {
+	width:15px;
+    margin: 0px 5px;
+}
+
+.row-eq-height {
+	display:block;
+}
+
+#services .bg-blue {
+	padding-bottom:20px;
+}
+
+#services .bg-blue:after {
+	display:none !important;
+}
+
+#services h4 {
+    font-size: 13px;
+}
+
+#contact h4 {
+    font-size: 13px;
+}
+
+#why-choose h6 {
+	margin-bottom:20px;
+}
+
+#footer h3 {
+	margin-top:30px;
+}
+
+.space-small {
+	padding:0px 15px;
+}
+
+#banner li {
+	/* background-position:0% 0% !important; */
+}
+
+#why-choose {
+	background-size:cover;
+}
+
+#footer input {
+	max-width:250px;
+}
+
+#services .bd {
+	margin-left:15px;
+	margin-right:15px;
+}
+
+#banner.services {
+	    background-size: cover;
+	padding-top:0px;
+}
+
+#banner.services .bg {
+	padding-top:25px;
+}
+
+#banner.charity h6 {
+	margin-bottom:0px;
+}
+
+#copyright {
+	padding:20px 0px;
+}
+
+#copyright p {
+	margin:7px 0px;
+}
+
+.visible-xs {
+	display:inline-block !important;
+}
+
+#banner.services .bg h1 {
+    font-size: 20px;
+}
+
+.get {
+    font-size: 11px;
+    min-width: 160px;
+    line-height: 37px;
+	margin-top: 30px;
+}
+
+#welcome-text.services h6, #welcome-text.s-polling h6.bd {
+    font-size: 11px;
+}
+
+#welcome-text.services h6:before, #welcome-text.s-polling h6.bd:before {
+    content: '';
+    width: 30px;
+    left: -50px;
+}
+
+#welcome-text.services h6:after, #welcome-text.s-polling h6.bd:after {
+    content: '';
+    width: 30px;
+    right: -50px;
+}
+
+#generate h6 {
+    font-size: 11px;
+}
+
+#generate h6:before {
+    content: '';
+    width: 30px;
+    left: -50px;
+}
+
+#generate h6:after {
+    content: '';
+    width: 30px;
+    right: -50px;
+}
+
+#services.services h3 {
+    font-size: 15px;
+}
+
+#generate  h3 {
+    font-size: 20px;
+}
+
+#services.services h4 {
+	margin-top:25px;
+	font-size:20px;
+}
+
+#services.services .bg-1, #services.services .bg-2 {
+	background:none;
+}
+
+#services.services .bg-1, #services.services .bg-2 {
+	background:none;
+}
+
+#services-database .bg, #services-database .bg-2 {
+	background:none;
+}
+
+#services-database img {
+	margin-bottom:25px;
+}
+
+#services-database h3 {
+    font-size: 16px;
+    margin: 21px 0px;
+}
+
+#banner.s-polling h1 {
+    font-size: 29px;
+    line-height: 35px;
+	margin-bottom:10px;
+}
+
+#banner.s-polling {
+	padding-top: 20px;
+	padding-bottom: 18px;
+	background-size: 100% 100%;
+	background-position: 50% 50%;
+}
+
+#banner.magazines .get {
+	margin-top:10px;
+}
+
+#welcome-text.s-polling .bg-white {
+	margin-bottom:25px;
+}
+
+#welcome-text.s-polling .row-top {
+	margin-top:0px;
+}
+
+#services.s-polling .bg-black h4 {
+    font-size: 14px;
+}
+
+#services.s-polling .sp {
+    padding: 25px 0px 35px 0px;
+}
+
+.card-header .card-link {
+    padding-left: 32px;
+	font-size:14px;
+}
+
+.row-top {
+	margin-top:0px;
+}
+
+#charity-info h3 {
+    font-size: 36px;
+	line-height:40px;
+}
+
+#charity-info .title p {
+    font-size: 13px;
+	margin-top:30px;
+    line-height: 24px;
+}
+
+#charity-info.s-polling.charity .row-top {
+	margin-top:30px;
+	height: 160px;
+}
+
+#charity-info {
+    background-size: auto 60%, auto auto;
+	padding-bottom:50px;
+}
+
+h6.bd {
+	font-size:11px;
+}
+
+h6.bd:before {
+	width: 30px;
+	left: -50px;
+}
+
+h6.bd:after {
+	width: 30px;
+	right: -50px;
+}
+
+#charity-profit {
+	padding-bottom:100px;
+}
+
+#charity-profit h3 {
+    font-size: 14px;
+}
+
+#charity-profit h6.bd {
+	margin-top:30px;
+}
+
+#welcome-text.charity .bg {
+	background:none;
+}
+
+#welcome-text.charity {
+    padding-top: 85px;
+}
+
+#welcome-text.charity img {
+	margin-bottom:20px;
+}
+
+#banner.charity .bg h1 {
+    font-size: 14px;
+}
+
+#service-team {
+	background:#272727;
+}
+
+#service-team:after {
+	display:none;
+}
+
+#banner.s-marketting .bg {
+    background: url(../img/overlay-s-marketting.png) 100% 50% no-repeat;
+    padding: 30px 0px 30px 0px;
+}
+
+#banner.services.s-marketting h1 {
+	font-size:30px;
+    line-height: 35px;
+}
+
+#service-team h3 {
+    font-size: 15px;
+    line-height: 27px;
+}
+
+#service-team .bg-white {
+	margin-top:25px;
+	padding-left:20px;
+	padding-right:20px;
+}
+
+#service-team .b-right, #service-team .b-left {
+	border-right:none;
+	border-left:none;
+	padding-left:20px;
+	padding-right:20px;
+}
+
+#service-team .b-right.last {
+	border-bottom:1px solid #b9b9b9;
+}
+
+#welcome-text.s-marketting .bg-green {
+    border:3px solid #cfcfd1;
+    padding: 0px 20px 25px 20px;
+}
+
+#welcome-text.s-marketting .bg-blue {
+    border:3px solid #cfcfd1;
+    padding: 0px 20px 25px 20px;
+	margin-bottom:25px;
+}
+
+#generate {
+	padding:100px 0px;
+}
+
+#solution-service h3 {
+    font-size: 19px;
+}
+
+#solution-service .s-left, #solution-service .s-right {
+    padding:0px 15px;
+    padding-bottom: 30px;
+}
+
+#solution-service h4 {
+	margin-top:20px;
+}
+
+#news-info h4 {
+    font-size: 21px;
+}
+
+#news-info .bg-1,#news-info .bg-2,#news-info .bg-3, #news-info .bg-4, #news-info .bg-5 {
+	margin-top:0px;
+	margin-bottom:25px;
+}
+
+#take-business h3 {
+    font-size: 15px;
+	line-height:25px;
+}
+
+#take-business h2 {
+	display:inline-block;
+	padding-left:0px;
+    font-size: 28px;
+	line-height:35px;
+}
+
+#take-business h2 span, #take-business h2 span.green {
+	font-size:28px;
+}
+
+#take-business h2 img {
+    right: -55px;
+	width:50px;
+}
+
+#take-business {
+    background: #272727;
+}
+
+li.nav-item {
+    display: inline-block;
+	text-align:center;
+	width:100%;
+	min-height: 25.5px;	
+}
+.dropdown-item {
+	color:#fff;
+	font-size:13px;
+}
+
+.dropdown-menu {
+	background:#009ada;
+}
+
+#services-offered .arrow-right:after, #services-offered .arrow-left:after {
+	display:none;
+}
+
+#services-offered .s-right-in {
+	padding-right:15px;
+}
+
+#p-candidates .r-top-m {
+	margin-top:-75px;
+}
+
+#p-candidates .align.right {
+}
+
+#p-candidates .align-right {
+	display:none;
+}
+
+#welcome-text.magazines {
+	background-size: 100% auto;
+}
+
+#p-candidates .m-minus {
+	margin-top:0px;
+}
+
+#p-candidates h3 {
+	width:50%;
+	margin-left:25%;
+}
+
+#charity-info {
+    background: url(../img/bg-hands.png) 39% 95% no-repeat, url(../img/bg-charity-white.png) top left no-repeat;
+       background-size: 100% 35%, auto auto;
+}
+
+#charity-profit {
+	background-size: auto 100%;
+	padding-bottom:150px;
+}
+
+#p-candidates h5 {
+	background:#fff;
+	padding:15px 15px;
+}
+
+.none-small {
+	padding:0px;
+}
+
+#p-candidates .bg {
+	padding-right:25px;
+}
+/*** New Css ***/
+#services-database .bg-2 .align-left {
+	position:relative;
+	left:-30px;
+	max-height:100px;
+	top:36px;
+}
+
+#services-database .bg-2 {
+	padding-bottom:0px;
+}
+
+#services-database .bg-2 .align-right {
+	position:relative;
+	margin-bottom:0px;
+	right:-30px;
+	max-height:100px;
+	float:right;
+}
+
+#generate .call {
+    font-size: 17px;
+}
+
+#take-business .bg-take .align {
+	left: -4px;
+	width: 100%;
+	max-width: 100%;
+}
+
+#take-business .t-b .get {
+	margin-bottom:80px;
+}
+
+
+/****** New Css *****/
+#banner.services .bg {
+    padding-top: 55px;
+}
+
+#banner.services {
+    min-height: 200px;
+}
+
+#p-candidates h3 {
+	    font-size: 18px !important;
+}
+
+.bg-none {
+	background:none !important;
+}
+
+#services.s-polling .bg-two {
+	background-size: 100% 100%;
+}
+
+#banner.magazines  {
+	background-size: 160% 100%;
+	background-position: 0% 50%;
+}
+
+}
+
+
+/* Portrait tablets and small desktops */
+@media (min-width: 576px) and (max-width: 767px) {
+#services img.fullwidth {
+	height:100%;
+}
+
+#take-business .container {
+	padding:0px;
+}
+
+#services.s-polling .bg-two {
+    background-size: 78% 100%;
+}
+
+
+#banner.services .bg h1 span {
+	display:inline-block;
+	width:100%;
+}
+
+.visible-sm {
+	display:inline-block !important;
+}
+
+#services .bg-blue {
+	padding-bottom:15px;
+}
+
+.navbar-light .navbar-nav .nav-link.email {
+	margin-top:0px;
+}
+
+ul.navbar-nav.right.mr-auto {
+	margin-bottom:10px;
+}
+
+#services h4 {
+    font-size: 13px;
+}
+
+#contact h4 {
+    font-size: 13px;
+}
+
+#why-choose h6 {
+    font-size: 12px;
+    margin: 5px 0px 0px 0px;
+}
+
+#footer h3 {
+	margin-top:30px;
+}
+
+#footer .logo {
+	margin-top:30px;
+}
+
+#footer {
+	padding:40px 0px 40px 0px;
+}
+
+h1 {
+    font-size: 29px;
+}
+
+h3 {
+    font-size: 19px;
+}
+
+h2 span {
+    font-size: 15px;
+}
+
+#copyright p {
+    font-size: 11px;
+	line-height:20px;
+}
+
+#banner li {
+	background-position:40% 0% !important;
+}
+
+#contact {
+	background-position: 30% 0% !important;
+}
+
+#why-choose {
+	background-size:auto 100%;
+	background-position:90% 50%;
+}
+
+.navbar-light .navbar-nav .nav-link {
+	font-size: 11px;
+    min-width: 65px;
+}
+
+#banner.services {
+	background-size:100% auto;
+	background-position:top left;
+	padding-top:83px;
+}
+
+#banner.services .bg {
+	padding-top:90px;
+}
+
+#banner.services .bg h1 {
+    font-size: 25px;
+}
+
+.get {
+    font-size: 11px;
+    min-width: 180px;
+    line-height: 37px;
+}
+
+#welcome-text.services h6 {
+    font-size: 11px;
+}
+
+#welcome-text.services h6:before {
+    content: '';
+    width: 30px;
+    left: -50px;
+}
+
+#welcome-text.services h6:after {
+    content: '';
+    width: 30px;
+    right: -50px;
+}
+
+#generate h6 {
+    font-size: 20px;
+}
+
+#generate h6:before {
+    content: '';
+    width: 30px;
+    left: -50px;
+}
+
+#generate h6:after {
+    content: '';
+    width: 30px;
+    right: -50px;
+}
+
+#services.services h3 {
+    font-size: 25px;
+}
+
+#generate  h3 {
+    font-size: 30px;
+}
+
+#services.services h4 {
+	margin-top:25px;
+	font-size:20px;
+}
+
+#services.services .bg-1>.container, #services.services .bg-2>.container {
+    padding-left:0px;
+    padding-right:0px;
+}
+
+#services.services .bg-1, #services.services .bg-2, #services-database .bg {
+	background:transparent;
+}
+
+#services-database .bg img {
+	margin-bottom:15px;
+}
+
+#services-database h3 {
+    font-size: 26px;
+    margin: 35px 0px;
+}
+
+#banner.s-polling h1 {
+    font-size: 46px;
+    line-height: 48px;
+}
+
+#banner.s-polling {
+	padding-top: 20px;
+	padding-bottom: 18px;
+	background-size: 100% 100%;
+	background-position: 50% 50%;
+}
+
+#banner.magazines .get {
+	margin-top:10px;
+}
+
+#welcome-text.s-polling h3 {
+    font-size: 14px;
+}
+
+#welcome-text.s-polling h4 {
+    font-size: 13px;
+}
+
+#welcome-text.s-polling .bg-white {
+	margin-bottom:30px;
+}
+
+#welcome-text.s-polling .row-top {
+	margin-top:0px;
+}
+
+#services.s-polling .bg-black h4 {
+    font-size: 18px;
+}
+
+#charity-info h3 {
+    font-size: 36px;
+	line-height:40px;
+}
+
+#charity-info .title p {
+    font-size: 13px;
+	margin-top:30px;
+    line-height: 24px;
+}
+
+#charity-info .row-top {
+	margin-top:30px;
+}
+
+#charity-info {
+    background-size: auto 60%, auto auto;
+	padding-bottom:50px;
+}
+
+h6.bd {
+	font-size:15px;
+}
+
+h6.bd:before {
+	width: 30px;
+	left: -50px;
+}
+
+h6.bd:after {
+	width: 30px;
+	right: -50px;
+}
+
+#charity-profit {
+	padding-bottom:100px;
+}
+
+#charity-profit h3 {
+    font-size: 14px;
+}
+
+#charity-profit h6.bd {
+	margin-top:30px;
+}
+
+#welcome-text.charity .bg {
+	background:none;
+}
+
+#welcome-text.charity {
+    padding-top: 125px;
+}
+
+#welcome-text.charity img {
+	margin-bottom:20px;
+}
+
+#banner.charity .bg h1 {
+    font-size:14px;
+}
+
+#service-team {
+	background:#272727;
+}
+
+#service-team .left-s {
+    padding-left: 35px;
+}
+
+#service-team .right-s {
+    padding-right: 35px;
+}
+
+#service-team .bg-white:before {
+	display:none;
+}
+
+#banner.s-marketting .bg {
+    background: url(../img/overlay-s-marketting.png) 100% 50% no-repeat;
+    padding: 30px 0px 30px 0px;
+}
+
+#banner.services.s-marketting h1 {
+	font-size:30px;
+    line-height: 35px;
+}
+
+#service-team h3 {
+    font-size: 15px;
+    line-height: 27px;
+}
+
+#service-team .bg-white {
+	margin-top:25px;
+	padding-left:35px;
+	padding-right:35px;
+}
+
+#service-team .b-right.last {
+	border-bottom:1px solid #b9b9b9;
+}
+
+#welcome-text.s-marketting .bg-blue {
+	margin-bottom:25px;
+}
+
+#welcome-text.s-marketting h4 {
+	font-size:20px;
+}
+
+#service-team h4 {
+    font-size: 14px;
+}
+
+#news-info .bg-1,#news-info .bg-2,#news-info .bg-3, #news-info .bg-4, #news-info .bg-5 {
+	margin-top:0px;
+	margin-bottom:25px;
+}
+
+#take-business h3 {
+    font-size: 28px;
+}
+
+#take-business h2 {
+	display:inline-block;
+	padding-left:0px;
+}
+
+#take-business h2 img {
+    right: -85px;
+}
+
+.navbar-toggleable-md .navbar-nav .dropdown-menu {
+	position:absolute;
+}
+
+#header li.nav-item span.dropdown-toggle {
+    width: 15px;
+}
+
+#p-candidates .align.right {
+}
+
+#banner.magazines h6, #banner.s-polling h1 {
+	text-align:left;
+}
+
+#magazines-work h5, #magazines-work .left h5 {
+	padding:0px;
+	font-size:26px;
+}
+
+#magazines-work h4 {
+	font-size:22px;
+}
+
+#welcome-text.magazines {
+	background-size:100% auto;
+}
+
+#p-candidates .m-minus {
+	margin-top:0px;
+}
+
+#p-candidates h3 {
+	width:50%;
+	margin-left:25%;
+	font-size:30px;
+}
+
+#charity-info {
+	background: url(../img/bg-hands.png) 50% 100% no-repeat, url(../img/bg-charity-white.png) top left no-repeat;
+	background-size:auto 60%, auto auto;
+}
+
+#p-candidates .align-right {
+	max-width:200px;
+}
+
+/*** New Css ***/
+#services-database .bg-2 .align-left {
+	position:relative;
+	left:-60px;
+	max-height:100px;
+	top:36px;
+}
+
+
+#services-database .bg-2 {
+	padding-bottom:0px;
+}
+
+
+#services-database .bg-2 .align-right {
+	position:relative;
+	margin-bottom:0px;
+	right:-60px;
+	max-height:100px;
+	float:right;
+}
+
+#take-business .bg-take .align {
+    left: -16px;
+    max-width: 100%;
+}
+
+#take-business h2 {
+    padding-left: 138px;
+}
+
+#take-business .t-b .get {
+	margin-bottom:80px;
+}
+}
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+#banner li {
+	background-position:40% 0% !important;
+}
+
+#services.s-polling .bg-two {
+    background-size: 60% 100%;
+}
+
+#contact {
+	background-position: 30% 0% !important;
+}
+
+#why-choose {
+	background-size:auto 100%;
+	background-position:90% 50%;
+}
+
+#services img.fullwidth {
+	height:100%;
+}
+
+#services .bg-blue {
+	padding-bottom:15px;
+}
+
+#footer .logo p img {
+    margin-left: 8px;
+}
+
+#contact h4 {
+    font-size: 15px;
+}
+
+.navbar-collapse.collapse.show {
+	margin-bottom:20px;
+}
+
+.navbar-light .navbar-nav .nav-link.email {
+	margin-top:0px;
+}
+
+#banner.services .bg h1 {
+    font-size: 25px;
+}
+
+.get {
+    font-size: 11px;
+    min-width: 190px;
+    line-height: 37px;
+}
+
+#generate  h3 {
+    font-size: 30px;
+}
+
+#services.s-polling .bg-black h4 {
+    font-size: 18px;
+}
+
+.card-header .card-link {
+    font-size: 12px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+
+#welcome-text.s-polling .bg-white {
+	margin-bottom:30px;
+}
+
+#welcome-text.s-polling .row-top {
+	margin-top:0px;
+}
+
+#charity-profit h3 {
+    font-size: 21px;
+}
+
+#charity-profit h6.bd {
+    font-size: 14px;
+}
+
+#charity-info h3 {
+    font-size: 50px;
+}
+
+#service-team .bg-white {
+	padding-left:30px;
+}
+
+#service-team .left-s {
+    padding-left: 20px;
+}
+
+#service-team .right-s {
+    padding-right: 20px;
+}
+
+#service-team h4 {
+    font-size: 13px;
+}
+
+#service-team h3 {
+    font-size: 16px;
+    line-height: 29px;
+}
+
+#welcome-text.s-marketting p {
+    font-size: 14px;
+}
+
+#banner.s-marketting .bg h1 {
+    line-height: 47px;
+	font-size: 38px;
+}
+
+#take-business h2, #take-business h2 span, #take-business h2 span.green {
+    font-size: 29px;
+}
+
+#news-info .bg-3, #news-info .bg-4, #news-info .bg-5 {
+	margin-top:25px;
+}
+
+#take-business h2 img {
+    right: -15px;
+	width:50px;
+}
+
+.visible-md {
+	display:inline-block !important;
+}
+.navbar-toggleable-md .navbar-nav .dropdown-menu {
+	position:absolute;
+}
+
+#services-offered .bg-white p {
+	font-size:10px;
+}
+
+#p-candidates .m-minus {
+	margin-top:0px;
+}
+
+#p-candidates h3 {
+	font-size:18px;
+}
+
+#welcome-text.charity .bg {
+	background-size:45% auto;
+}
+
+#take-business .bg-take .align {
+	left: -14px;
+	max-width: 280px;
+}
+
+#take-business h2 {
+    padding-left:50px;
+}
+
+#take-business .t-b .get {
+	margin-bottom:80px;
+}
+
+/*********** New Css **********/
+#take-business h2 img {
+    right: -33px;
+    width: 38px;
+}
+
+}
+
+@media (min-width: 992px) and (max-width: 1169px) {
+#banner li {
+	background-position:40% 0% !important;
+}
+
+#contact {
+	background-position: 30% 0% !important;
+}
+
+#why-choose {
+	background-size:auto 100%;
+	background-position:90% 50%;
+}
+
+#services img.fullwidth {
+	height:100%;
+}
+
+#services .bg-blue {
+	padding-bottom:15px;
+}
+
+#why-choose .col-md-7-choose {
+	flex: 0 0 50%;
+	max-width: 50%;
+	width:80%;
+}
+#banner.services .bg h1 {
+    font-size: 45px;
+}
+
+#services.s-polling .bg-black h4 {
+    font-size: 20px;
+}
+
+#services.s-polling {
+	background-size:150% 100%;
+}
+
+#welcome-text.s-polling h3 {
+    font-size: 21px;
+}
+
+#welcome-text.s-polling h4 {
+    font-size: 16px;
+}
+
+#charity-info h3 {
+    font-size: 60px;
+}
+
+#charity-profit h3 {
+    color: #009adb;
+    font-size: 28px;
+}
+
+#welcome-text.charity h3 {
+    font-size: 40px;
+}
+
+#charity-info .title p {
+    font-size: 19px;
+}
+
+#take-business h2, #take-business h2 span, #take-business h2 span.green {
+    font-size: 29px;
+	line-height:35px;
+}
+
+#take-business h3 {
+    font-size: 25px;
+}
+
+#p-candidates h3 {
+	width:50%;
+	margin-left:25%;
+	margin-top:50px;
+}
+
+
+#take-business .bg-take .align {
+	left: 0px;
+	max-width: 400px;
+}
+
+#take-business h2 {
+    padding-left:100px;
+}
+
+#take-business .t-b .get {
+	margin-bottom:100px;
+}
+
+.dropdown-menu {
+	background:#009adb;
+}
+}
+
+@media (min-width: 768px) {
+}/*
+.container {
+    width: 760px;
+    max-width: 100%;
+}
+*/
+
+
+/* Landscape tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1169px) {
+}
+
+.dropdown.open>a {
+	background:#7bcf20 !important; 
+}
+
+
+
+/*** New Css ***/
+#p-candidates .align-right {
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+	max-width: inherit;
+	z-index: 999;
+	width: 26%;
+}
+.p-lr {
+	padding-left:80px;
+	padding-right:80px;
+	width:90%;
+}
+
+#charity-info {
+	background:url(../img/bg-hands.png) 50% 100% no-repeat, url(../img/bg-charity-white.png) top left no-repeat;
+	background: url(../img/bg-charity-white.png) top left no-repeat;
+	background-size:100% 100%;
+	background-color: #181818;
+	position:relative;
+	overflow:hidden;
+	padding-bottom:0px;
+}
+
+#charity-info .title p {
+    font-size: 22px;
+}
+
+#charity-info .a-left {
+	position:absolute;
+	top: 90%;
+	left: -5%;
+}
+
+#charity-info .a-right {
+	position:absolute;
+	top:-145px;
+	right: -6%;
+	height: 240px;
+	width: 170px;
+}
+
+#charity-info .tp-img {
+	margin-top:50px;
+}
+
+.footer-charity {
+	max-height:765px;
+	margin-bottom:-100px;
+}
+
+#services-database .bg-2 {
+	background: #fff url(../img/left-bg.png) 5% 100% no-repeat;
+	background-size: 160px 79%;
+	padding-top:50px;
+}
+
+#services-database .bg-2 .top-minus {
+	margin-top:-50px;
+}
+
+#services-database.bg-1 {
+	background:url(../img/bg-1.png) 50% 50% no-repeat;
+	background-size:cover;
+}
+
+.footer-charity {
+	width:100%;
+}
+
+/** New Add Css**/
+.normal-left-space {
+	padding-left:25px;
+}
+
+#services.s-polling .s-polling-position {
+	position:relative;
+}
+
+#services.s-polling .left-arrow {
+	position:absolute;
+	bottom:-86px;
+	left:-185px;
+}
+
+@media (max-width: 575px) {
+#banner.services .bg {
+    padding-top: 70px;
+    margin-top: 59px;
+}
+
+#banner.services .bg h1 {
+	font-size:12px;
+	margin:20px 0px;
+}
+
+#banner.services .bg h1 br {
+	display:none;
+}
+
+#banner.services .get.leads {
+	min-width:150px;
+	font-size:10px;
+}
+
+.get.shadow.call {
+	min-width:190px;
+}
+
+#banner.services .get {
+    font-size: 8px;
+    min-width: 110px;
+    line-height: 31px;
+	background-size: 30px 100%;
+    padding-right: 25px;
+	margin:0px;
+	margin-left:5px;
+}
+
+.p-lr {
+	padding-left:15px;
+	padding-right:15px;
+}
+
+.s-small {
+	padding:0px 15px;
+}
+
+#services-database .bg-2 {
+	background:none;
+}
+
+#charity-info {
+	background: url(../img/bg-charity-white.png) top left no-repeat;
+    background-size:auto auto;
+	background-color: #181818;
+}
+
+#charity-info .a-left, #charity-info .a-right {
+	display:none;
+} 
+
+#charity-info .title p {
+    font-size: 12px;
+	line-height: 19px;
+}
+
+#charity-info .tp-img img {
+	min-height:200px;
+}
+
+.footer-charity {
+	max-height:42px;
+}
+
+#p-candidates h5 {
+    padding: 3px 15px;
+	font-size: 10px;
+}
+
+#p-candidates h5 span {
+    font-size: 18px;
+}
+
+#p-candidates .align-right {
+	display:block;
+	width: 34%;
+	bottom: 35px;
+}
+
+#welcome-text.charity .bg {
+	padding:25px 0px;
+}
+
+#p-candidates .bg-border .bg-white {
+	width: 100%;
+    display: inline-block;
+    padding: 0px 0px;
+}
+
+#p-candidates .bg-border .bg-white .position-normal .row {
+	margin:0px;
+}
+
+#p-candidates .bg-border .bg-white .position-normal {
+	padding: 5px 25px;
+}
+
+#service-team h4 {
+	font-size:16px;
+}
+
+#banner.s-polling.t-show .bg {
+	background-size: 100% 100%;
+	padding: 30px 0px;
+	margin-top:0px;
+}
+
+#banner.s-polling h6 {
+	font-size:24px;
+}
+
+#banner.s-polling h1 {
+    font-size: 24px;
+}
+
+}
+
+
+/* Portrait tablets and small desktops */
+@media (min-width: 576px) and (max-width: 767px) {
+.p-lr {
+	padding-left:15px;
+	padding-right:15px;
+}
+
+#banner.p-election h1 {
+	text-align:center;
+}
+
+#services-database .bg-2 {
+	background:url(../img/left-bg.png) 2% 0% no-repeat;
+	background-size: 70px 40%;
+}
+
+#services-database .bg-2 .row {
+	padding-top:50px;
+	padding-left:20px;
+}
+
+#charity-info {
+	background: url(../img/bg-charity-white.png) top left no-repeat;
+    background-size:auto auto;
+	background-color: #181818;
+}
+
+#charity-info .a-left, #charity-info .a-right {
+	display:none;
+}
+
+.footer-charity {
+	max-height:42px;
+}
+
+#p-candidates .align-right {
+	display:block;
+	width: 34%;
+	bottom: 57px;
+}
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+.p-lr {
+	padding-left:15px;
+	padding-right:15px;
+}
+
+#banner.s-polling h1 {
+	font-size:48px;
+}
+
+#banner.s-polling.t-show .bg {
+	background-size:100% 100%;
+	margin-top:0px;
+}
+
+#p-candidates .align-right {
+	max-width:280px;
+}
+
+#services-database .bg-2 {
+	background:url(../img/left-bg.png) 2% 0% no-repeat;
+	background-size: 70px 40%;
+}
+
+#services-database .bg-2 .row {
+	padding-top:50px;
+	padding-left:20px;
+}
+
+#charity-info .title p {
+    font-size: 15px;
+    line-height: 25px;
+}
+
+#p-candidates .align-right {
+	width: 34%;
+	bottom: 57px;
+}
+}
+
+/* Landscape tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1169px) {
+#services-database .bg-2 {
+	background:url(../img/left-bg.png) 2% 0% no-repeat;
+	background-size: 70px 40%;
+}
+
+#banner.s-polling h1 {
+	font-size:48px;
+}
+
+#banner.s-polling.t-show .bg {
+	background-size:100% 100%;
+	margin-top:0px;
+}
+
+
+#services-database .bg-2 .row {
+	padding-top:50px;
+	padding-left:20px;
+}
+
+#p-candidates .align-right {
+	width: 34%;
+	bottom: 57px;
+}
+}
+
+
+/* Landscape tablets and medium desktops */
+@media (min-width: 1170px) and (max-width: 1250px) {
+#services-database .bg-2 {
+	background:url(../img/left-bg.png) 2% 0% no-repeat;
+	background-size: 100px 50%;
+}
+
+#services-database .bg-2 .row {
+	padding-top:50px;
+	padding-left:20px;
+}
+}/*
+
+@media (min-width: 1251px) and (max-width: 1400px) {
+#charity-info .a-right {
+	top:-135px;
+}
+
+#charity-info .a-left {
+	left: -40px;
+}
+
+}
+*/
+
+
+@media (min-width: 1500px) and (max-width: 1600px) {
+#charity-info .a-right {
+	top:-135px;
+}
+
+#charity-info .a-left {
+	left: -40px;
+}
+
+}
+
+
+@media (min-width: 1601px) and (max-width: 1700px) {
+#charity-info .a-right {
+	top:-132px;
+	right:-9%;
+}
+
+#charity-info .a-left {
+	left: -40px;
+	left:-8%;
+}
+}
+
+@media (min-width: 1701px) and (max-width: 1800px) {
+#charity-info .a-right {
+	top:-132px;
+	right:-9%;
+}
+
+#charity-info .a-left {
+	left: -40px;
+	left:-8%;
+}
+}
+
+@media (min-width: 1801px) and (max-width: 1900px) {
+#charity-info .a-right {
+	top:-132px;
+	right:-11%;
+}
+
+#charity-info .a-left {
+	left: -40px;
+	left:-12%;
+}
+}
+
+@media (min-width: 1901px) and (max-width: 1950px) {
+#charity-info .a-right {
+	top:-132px;
+	right:-15%;
+}
+
+#charity-info .a-left {
+	left: -40px;
+	left:-15%;
+}
+}
+
+@media (min-width: 1951px) and (max-width: 2000px) {
+#charity-info .a-right {
+	top:-132px;
+	right:-18%;
+}
+
+#charity-info .a-left {
+	left: -40px;
+	left:-18%;
+}
+}
+
+@media (min-width: 2001px) and (max-width: 2100px) {
+#charity-info .a-right {
+	top:-132px;
+	right:-18%;
+}
+
+#charity-info .a-left {
+	left: -40px;
+	left:-18%;
+}
+}
+
+
+@media (min-width: 2101px) {
+#charity-info .a-right {
+	top:-132px;
+	right:-18%;
+}
+
+#charity-info .a-left {
+	left: -40px;
+	left:-18%;
+}
+}
+
+
+@media (min-width: 1400px) and (max-width: 1630px){
+
+.left-1440 {
+	padding-left:100px;
+}
+	
+}

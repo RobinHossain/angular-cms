@@ -1,0 +1,91 @@
+
+
+<section class="login_wrapper row">
+  <div class="left_part fill col-md-6 col-sm-12">
+    &nbsp;<div class="center_logo">&nbsp;</div>
+  </div>
+  <div class="right_part col-md-6 col-sm-12">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <!-- Success message -->
+          <div class="alert alert-success success" *ngIf="showSucessMessage">
+            Sign Up successfully, please login now.
+          </div>
+
+          <!-- Error message -->
+          <div class="alert alert-danger" *ngIf="serverErrorMessages">
+            {{serverErrorMessages}}
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-12 text-center col-xs-12 col-sm-12">
+          <h6 class="bd">Sign Up</h6>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-2"></div>
+        <div class="col-sm-12 col-md-12 col-lg-8">
+          <form #signUpForm="ngForm" (ngSubmit)="signUpForm.valid && onSubmit(signUpForm)">
+
+
+
+            <div class="form-group">
+              <label for="firstName">First Name</label>
+              <input type="text" id="firstName" #firstName="ngModel" class="form-control" [(ngModel)]="user.firstName" name="firstName" placeholder="First Name"
+                     required  [ngClass]="{'invalid-textbox' :signUpForm.submitted && !firstName.valid }">
+              <div *ngIf="signUpForm.submitted && !firstName.valid">
+                <label class="validation-message">First name is required.</label>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="lastName">Last Name</label>
+              <input type="text" id="lastName" #lastName="ngModel" class="form-control" [(ngModel)]="user.lastName" name="lastName" placeholder="Last Name"
+                     required  [ngClass]="{'invalid-textbox' :signUpForm.submitted && !lastName.valid }">
+              <div *ngIf="signUpForm.submitted && !lastName.valid">
+                <label class="validation-message">First name is required.</label>
+              </div>
+            </div>
+
+
+
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="text" id="email" #email="ngModel" class="form-control" [(ngModel)]="user.email" name="email" placeholder="Email"
+                     required [pattern]="emailRegex"  [ngClass]="{'invalid-textbox' :signUpForm.submitted && !email.valid }">
+              <div *ngIf="signUpForm.submitted && email.errors">
+                <label *ngIf="email.errors.required" class="validation-message">Email is required to Signup.</label>
+                <label *ngIf="email.errors.pattern" class="validation-message">Invalid email address.</label>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="text" id="phone" #phone="ngModel" class="form-control" [(ngModel)]="user.phone" name="phone" placeholder="Phone number">
+            </div>
+
+            <div class="form-group">
+              <label for="password">Password</label>
+              <input type="password" id="password" #password="ngModel" class="form-control" [(ngModel)]="user.password" name="password" placeholder="Password"
+                     minlength="4" required [ngClass]="{'invalid-textbox' :signUpForm.submitted && !password.valid }">
+              <div *ngIf="signUpForm.submitted && password.errors">
+                <label *ngIf="password.errors.required" class="validation-message">This field is required.</label>
+                <label *ngIf="password.errors.minlength" class="validation-message">Enter atleast 4 characters.</label>
+              </div>
+            </div>
+
+            <!--<div class="form-group">-->
+              <!--<div class="g-recaptcha" data-sitekey="6LeWZHwUAAAAAMXTaQppEujGf5VCP2xZh_YmaX95"></div>-->
+            <!--</div>-->
+            <input type="submit" class="btn btn-primary" value="Sign Up">
+            <span class="no_account_text">If you are already registered user then ? <a [routerLink]="['/login']" >login here</a></span>
+          </form>
+        </div>
+        <div class="col-lg-2"></div>
+      </div>
+    </div>
+
+  </div>
+</section>
+

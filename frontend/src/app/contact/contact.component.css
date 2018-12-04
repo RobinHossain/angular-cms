@@ -1,0 +1,54 @@
+.form_top_bar {
+  font-size: 15px;
+  border-bottom: 1px solid lightgray;
+  padding-bottom: 9px;
+  margin-bottom: 25px;
+  font-style: italic;
+}
+
+.contact_form{
+  background-image: url('../../assets/img/bg-blue.jpg');
+}
+
+.g-recaptcha {
+  width: 310px;
+  margin: 0 auto;
+}
+
+.user_form_container textarea{
+  height: inherit;
+}
+
+.cat_interest input[type="checkbox"] {
+  width: 23px;
+  float: left;
+}
+
+
+.cat_interest label {
+  margin: 0px;
+}
+
+.cat_interest span.label-text {
+  float: left;
+  padding-top: 7px;
+  font-size: 16px;
+}
+
+.cat_interest .form-check {
+  float: left;
+  padding-right: 23px;
+}
+
+.contact_form label, .contact_form  .form_top_bar, .contact_form h6.bd {
+  color: #ffffff;
+}
+
+.contact_form h6.bd:before, .contact_form h6.bd:after{
+  background: #ffffff;
+}
+
+
+
+
+

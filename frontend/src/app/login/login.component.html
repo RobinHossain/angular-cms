@@ -1,0 +1,54 @@
+
+
+<section class="login_wrapper row">
+    <div class="left_part fill col-md-6 col-sm-12">
+        &nbsp;<div class="center_logo">&nbsp;</div>
+    </div>
+    <div class="right_part col-md-6 col-sm-12">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <!-- Error message -->
+                    <div class="alert alert-danger" *ngIf="serverErrorMessages">
+                        {{serverErrorMessages}}
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 text-center col-xs-12 col-sm-12">
+                    <h6 class="bd">Login</h6>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-2"></div>
+                <div class="col-sm-12 col-md-12 col-lg-8">
+                    <form #signInForm="ngForm" (ngSubmit)="signInForm.valid && onSubmit(signInForm)">
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="text" id="email" name="email" class="form-control" #email="ngModel" [(ngModel)]="model.email" placeholder="Email" [pattern]="emailRegex" required
+                                   [ngClass]="{'invalid-textbox' :signInForm.submitted && !email.valid }">
+                            <div *ngIf="signInForm.submitted && email.errors?.pattern">
+                                <label class="validation-message">Invalid email address.</label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <input type="password" id="password" name="password" class="form-control" #password="ngModel" [(ngModel)]="model.password" placeholder="Password" required minlength="4"
+                                   [ngClass]="{'invalid-textbox' :signInForm.submitted && !password.valid }">
+                            <div *ngIf="signInForm.submitted && password.errors?.minlength">
+                                <label class="validation-message">Minimum 4 characters.</label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="g-recaptcha" data-sitekey="6LeWZHwUAAAAAMXTaQppEujGf5VCP2xZh_YmaX95"></div>
+                        </div>
+                        <input type="submit" class="btn btn-primary" value="Sign In">
+                        <span class="no_account_text">Don't have an account ? <a [routerLink]="['/signup']" >register here</a></span>
+                    </form>
+                </div>
+                <div class="col-lg-2"></div>
+            </div>
+        </div>
+
+    </div>
+</section>
